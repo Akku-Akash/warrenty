@@ -11,6 +11,14 @@ router.get("/", async(req,res)=>{
         return res.status(500).send({message : err.message})
     }
 })
+router.get("/:id", async(req,res)=>{
+    try{
+  const news = await News.findById(req.params.id).lean().exec()
+  return res.status(200).send(news) 
+    }catch(err){
+        return res.status(500).send({message : err.message})
+    }
+})
 
 router.post("/add", async(req,res)=>{
     try{

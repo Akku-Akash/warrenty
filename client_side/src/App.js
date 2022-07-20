@@ -6,12 +6,13 @@ import INdividual_data from './component/individual_data';
 
 
 function App() {
+
   return (
     <div >
    
     <Routes>
         <Route path= {"/"} element = {<News_data/>} />
-        <Route path= {"/single"} element = {<INdividual_data/>} />
+        <Route path= {"/single/:id"} element = {<INdividual_data/>} />
       </Routes> 
     </div>
   );
