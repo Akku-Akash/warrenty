@@ -1,0 +1,28 @@
+#images{
+    width: 30%;
+    margin-top: 5%;
+}
+.main{
+    margin-left: 10%;
+    
+}
+h1{
+    margin-left: 30%;
+}
+button{
+    margin-left: 30%;
+    margin-top: 5%;
+    background-color: teal;
+    width: 30%;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+}
+#dete{
+    display: flex;
+   justify-content: space-evenly;
+   text-align: center;
+}
+#dete>h2{
+    margin-top: 10%; 
+}
